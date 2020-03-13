@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Barcut Salon</title>
+	<title>Paul Da Barber</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,500,500i" rel="stylesheet">
 	<!--
@@ -41,12 +41,12 @@
 				<div class="header-top d-flex justify-content-between align-items-center navbar-expand-lg">
 					<div class="col menu-left">
 						<a class="active" href="index.html">Home</a>
-						<a href="about.html">about</a>
-						<a href="barbers.html">barbers</a>
-						<a href="gallery.html">gallery</a>
+						<a href="#aboutSection">about</a>
+						<!-- <a href="barbers.html">barbers</a> -->
+						<a href="#gallerySection">gallery</a>
 					</div>
 					<div class="col-3 logo">
-						<a href="index.html"><img class="mx-auto" src="img/logo.png" alt=""></a>
+						<a href="index.html"><img class="mx-auto pdblogo" src="img/pdb-text-black.png" alt=""></a>
 					</div>
 					<nav class="col navbar navbar-expand-lg justify-content-end">
 
@@ -62,19 +62,19 @@
 									<a class="nav-link" href="index.html">Home</a>
 								</li>
 								<li class="nav-item hide-lg">
-									<a class="nav-link" href="about.html">about</a>
+									<a class="nav-link js-scroll-trigger" href="#aboutSection">about</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="pricing.html">pricing</a>
+									<a class="nav-link js-scroll-trigger" href="#haircutsSection">Haircut Types</a>
 								</li>
-								<li class="nav-item hide-lg">
+								<!--<li class="nav-item hide-lg">
 									<a class="nav-link" href="barbers.html">barbers</a>
-								</li>
+								</li> -->
 								<li class="nav-item hide-lg">
-									<a class="nav-link" href="gallery.html">gallery</a>
+									<a class="nav-link" href="#gallerySection">gallery</a>
 								</li>
 								<!-- Dropdown -->
-								<li class="nav-item dropdown">
+								<!-- <li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 										Pages
 									</a>
@@ -91,9 +91,9 @@
 										<a class="dropdown-item" href="blog-home.html">Blog</a>
 										<a class="dropdown-item" href="blog-single.html">Blog Detail</a>
 									</div>
-								</li>
+								</li> -->
 								<li class="nav-item">
-									<a class="nav-link" href="contact.html">Contact</a>
+									<a class="nav-link js-scroll-trigger" href="#contactSection">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -105,7 +105,7 @@
 	<!--================ End Header Area =================-->
 
 	<!--================ Start banner Area =================-->
-	<section class="home-banner-area relative">
+	<section class="home-banner-area relative" id="topPage">
 		<div class="owl-carousel home-banner-owl">
 			<div class="banner-img">
 				<img class="img-fluid" src="img/banner/b1.jpg" alt="">
@@ -131,28 +131,31 @@
 				incididunt ut labore et dolore
 				magna aliqua. Ut enim ad minim.
 			</p>
-			<div class="text-center">
+			<!-- <div class="text-center">
 				<a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=-V5_GMuMzc8">
 					<span></span>
 				</a>
 			</div>
 			<div class="video-text">
 				<p>Watch Intro Video</p>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<!--================ End banner Area =================-->
 
 	<!--================ Start About Area =================-->
-	<section class="section-gap-top about-area">
+	<section class="section-gap-top about-area" id="aboutSection"> 
 		<div class="container">
 			<div class="single-about row align-items-center">
 				<div class="col-lg-4 col-md-6 no-padding about-left">
 					<div class="about-content">
-						<h1>We Believe that <br> Interior beauty Lasts Long</h1>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
-							especially in the workplace. That’s why it’s crucial that as women.</p>
-						<a href="" class="primary-btn">Learn More</a>
+						<h1>Meet your barber</h1>
+						<p>Hailing from Southern California, Paul is a celebrity stylist with almost 30 years of experience. Moreover, he is always willing to listen to his clients to achieve optimum results.
+							<br/><br/>
+							Paul & his wife Nicole reside in North County San Diego with their 2 children Sydney and PJ.
+							<br/><br/>
+							When he is not cuttin' at the shop, you can find Paul playing hoops, watching the Dodgers, Lakers & Raiders or spending quality time with his family.</p>
+						<!-- <a href="" class="primary-btn">Learn More</a> -->
 					</div>
 				</div>
 				<div class="col-lg-7 col-md-6 text-center no-padding about-right">
@@ -160,23 +163,122 @@
 						<img src="img/about-img.jpg" class="img-fluid info-img" alt="">
 					</div>
 				</div>
-				<div class="bordered-img">
+				<!-- <div class="bordered-img">
 					<img src="img/about-img2.jpg" class="img-fluid info-img" alt="">
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
 	<!--================ End About Area =================-->
 
+	<!--================ Start Gallery Area =================-->
+	<section class="gallery-area" id="gallerySection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 text-center">
+					<div class="section-title">
+						<h1>Gallery</h1>
+						<p>Carousel, make images same size</p>
+					</div>
+				</div>
+			</div>
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-gallery col-lg-4 col-md-6 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/gallery/g1.jpg" alt="">
+							</div>
+							<a href="img/gallery/g1.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex">
+										<img src="img/gallery/preview.png" alt="">
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="single-gallery col-lg-4 col-md-6 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/gallery/g2.jpg" alt="">
+							</div>
+							<a href="img/gallery/g2.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="single-gallery col-lg-4 col-md-6 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/gallery/g3.jpg" alt="">
+							</div>
+							<a href="img/gallery/g3.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+								</div>
+							</a>
+
+						</div>
+					</div>
+					<!-- <div class="single-gallery col-lg-4 col-md-6 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/gallery/g4.jpg" alt="">
+							</div>
+							<a href="img/gallery/g4.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="single-gallery col-lg-4 col-md-6 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/gallery/g5.jpg" alt="">
+							</div>
+							<a href="img/gallery/g5.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="single-gallery col-lg-4 col-md-6 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/gallery/g6.jpg" alt="">
+							</div>
+							<a href="img/gallery/g6.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================Start Gallery Area =================-->
+
 	<!--================ Start Service Area =================-->
-	<section class="service-area section-gap">
+	<section class="service-area section-gap"  id="haircutsSection">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-8 text-center">
 					<div class="section-title">
 						<h1>What We Can Do for You</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua ad minim veniam</p>
+						<p>Hair cut types and pictures here</p>
 					</div>
 				</div>
 			</div>
@@ -211,7 +313,7 @@
 	<!--================ End Service Area =================-->
 
 	<!--================ Start Catalogue Area =================-->
-	<section class="section-gap catalogue-area">
+	<!-- <section class="section-gap catalogue-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 offset-lg-1 offset-md-2 col-sm-12 col-md-8">
@@ -253,10 +355,10 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--================ End Catalogue Area =================-->
 
-	<!--================ Start Team Area =================-->
+	<!--================ Start Team Area =================
 	<section class="team-area section-gap">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -269,7 +371,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<!-- single member -->
+				single member
 				<div class="col-lg-4 col-md-4">
 					<div class="single-team-member">
 						<div class="member-img">
@@ -282,7 +384,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- single member -->
+				single member
 				<div class="col-lg-4 col-md-4">
 					<div class="single-team-member">
 						<div class="member-img">
@@ -294,7 +396,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- single member -->
+				single member
 				<div class="col-lg-4 col-md-4">
 					<div class="single-team-member">
 						<div class="member-img">
@@ -309,9 +411,9 @@
 			</div>
 		</div>
 	</section>
-	<!--================ End Team Area =================-->
+	================ End Team Area =================-->
 
-	<!--================Testimonials Area =================-->
+	<!--================Testimonials Area =================
 	<section class="testimonials-area section-gap-top">
 		<div class="overlay overlay-bg"></div>
 		<div class="container">
@@ -424,9 +526,9 @@
 			</div>
 		</div>
 	</section>
-	<!--================End Testimonials Area =================-->
+	================End Testimonials Area =================-->
 
-	<!--================Start Pricing Area =================-->
+	<!--================Start Pricing Area =================
 	<section class="price-area section-gap-top">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -439,7 +541,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<!-- single pricing -->
+				single pricing
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-price">
 						<div class="top-sec">
@@ -461,7 +563,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- single pricing -->
+				single pricing
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-price active">
 						<div class="top-sec">
@@ -483,7 +585,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- single pricing -->
+				single pricing
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-price">
 						<div class="top-sec">
@@ -508,10 +610,10 @@
 			</div>
 		</div>
 	</section>
-	<!--================Start Pricing Area =================-->
+	================Start Pricing Area =================-->
 
 	<!--================ Start Blog Area =================-->
-	<div class="blog-area">
+	<!-- <div class="blog-area">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -629,8 +731,77 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--================ End Events Area =================-->
+
+	<!-- Start contact-page Area -->
+	<section class="contact-page-area section-gap" id="contactSection">
+		<div class="container">
+			<div class="row">
+				<!-- <div class="map-wrap" style="width:100%; height: 445px;" id="contactMap"></div> -->
+				<div class="col-lg-4 d-flex flex-column address-wrap">
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-home"></span>
+						</div>
+						<div class="contact-details">
+							<h5>San Diego, CA 92126</h5>
+							<p>
+								9484 Black Mountain Road
+							</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-phone-handset"></span>
+						</div>
+						<div class="contact-details">
+							<h5>(xxx) xxxx xxx</h5>
+							<p>Tuesday: 9am - 6pm</p>
+							<p>Thursday: 9am - 6pm</p>
+							<p>Friday: 9am - 6pm</p>
+							<p>Saturday: 9am - 5pm</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-envelope"></span>
+						</div>
+						<div class="contact-details">
+							<h5>pba@gmail.com</h5>
+							<!-- <p>Send us your query anytime!</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+						<div class="row">
+							<div class="col-lg-6 form-group">
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+								 class="common-input mb-20 form-control" required="" type="text">
+
+								<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control"
+								 required="" type="email">
+
+								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'"
+								 class="common-input mb-20 form-control" required="" type="text">
+							</div>
+							<div class="col-lg-6 form-group">
+								<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
+							</div>
+							<div class="col-lg-12">
+								<div class="alert-msg" style="text-align: left;"></div>
+								<button class="primary-btn text-uppercase" style="float: right;">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End contact-page Area -->
 
 	<!--================ Start Footer Area =================-->
 	<footer class="footer-area section-gap">
