@@ -30,12 +30,13 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
 
 	<!--================ Start Header Area =================-->
-	<header class="header-area">
+	<header class="header-area header-fixed">
 		<div class="container">
 			<div class="header-wrap">
 				<div class="header-top d-flex justify-content-between align-items-center navbar-expand-lg">
@@ -51,7 +52,8 @@
 					<nav class="col navbar navbar-expand-lg justify-content-end">
 
 						<!-- Toggler/collapsibe Button -->
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#collapsibleNavbar">
 							<span class="lnr lnr-menu"></span>
 						</button>
 
@@ -144,17 +146,20 @@
 	<!--================ End banner Area =================-->
 
 	<!--================ Start About Area =================-->
-	<section class="section-gap-top about-area" id="aboutSection"> 
+	<section class="section-gap-top about-area" id="aboutSection">
 		<div class="container">
 			<div class="single-about row align-items-center">
 				<div class="col-lg-4 col-md-6 no-padding about-left">
 					<div class="about-content">
 						<h1>Meet your barber</h1>
-						<p>Hailing from Southern California, Paul is a celebrity stylist with almost 30 years of experience. Moreover, he is always willing to listen to his clients to achieve optimum results.
-							<br/><br/>
+						<p>Hailing from Southern California, Paul is a celebrity stylist with almost 30 years of
+							experience. Moreover, he is always willing to listen to his clients to achieve optimum
+							results.
+							<br /><br />
 							Paul & his wife Nicole reside in North County San Diego with their 2 children Sydney and PJ.
-							<br/><br/>
-							When he is not cuttin' at the shop, you can find Paul playing hoops, watching the Dodgers, Lakers & Raiders or spending quality time with his family.</p>
+							<br /><br />
+							When he is not cuttin' at the shop, you can find Paul playing hoops, watching the Dodgers,
+							Lakers & Raiders or spending quality time with his family.</p>
 						<!-- <a href="" class="primary-btn">Learn More</a> -->
 					</div>
 				</div>
@@ -178,7 +183,6 @@
 				<div class="col-md-8 text-center">
 					<div class="section-title">
 						<h1>Gallery</h1>
-						<p>Carousel, make images same size</p>
 					</div>
 				</div>
 			</div>
@@ -188,7 +192,7 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="img/gallery/g1.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery/g1.jpg" alt="">
 							</div>
 							<a href="img/gallery/g1.jpg" class="img-pop-up">
 								<div class="middle">
@@ -203,11 +207,12 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="img/gallery/g2.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery/g2.jpg" alt="">
 							</div>
 							<a href="img/gallery/g2.jpg" class="img-pop-up">
 								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png"
+											alt=""></div>
 								</div>
 							</a>
 						</div>
@@ -216,11 +221,12 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="img/gallery/g3.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery/g3.jpg" alt="">
 							</div>
 							<a href="img/gallery/g3.jpg" class="img-pop-up">
 								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png"
+											alt=""></div>
 								</div>
 							</a>
 
@@ -272,13 +278,12 @@
 	<!--================Start Gallery Area =================-->
 
 	<!--================ Start Service Area =================-->
-	<section class="service-area section-gap"  id="haircutsSection">
+	<section class="service-area section-gap" id="haircutsSection">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-8 text-center">
 					<div class="section-title">
 						<h1>What We Can Do for You</h1>
-						<p>Hair cut types and pictures here</p>
 					</div>
 				</div>
 			</div>
@@ -756,7 +761,7 @@
 							<span class="lnr lnr-phone-handset"></span>
 						</div>
 						<div class="contact-details">
-							<h5>(xxx) xxxx xxx</h5>
+							<h5>(619) 347 - 3423</h5>
 							<p>Tuesday: 9am - 6pm</p>
 							<p>Thursday: 9am - 6pm</p>
 							<p>Friday: 9am - 6pm</p>
@@ -768,35 +773,40 @@
 							<span class="lnr lnr-envelope"></span>
 						</div>
 						<div class="contact-details">
-							<h5>pba@gmail.com</h5>
+							<h5>????@gmail.com</h5>
 							<!-- <p>Send us your query anytime!</p> -->
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-8">
-					<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+					<!-- <form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
 						<div class="row">
 							<div class="col-lg-6 form-group">
-								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
-								 class="common-input mb-20 form-control" required="" type="text">
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter your name'"
+									class="common-input mb-20 form-control" required="" type="text">
 
-								<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control"
-								 required="" type="email">
+								<input name="email" placeholder="Enter email address"
+									pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
+									class="common-input mb-20 form-control" required="" type="email">
 
-								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'"
-								 class="common-input mb-20 form-control" required="" type="text">
+								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
+									required="" type="text">
 							</div>
 							<div class="col-lg-6 form-group">
-								<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''"
-								 onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
+								<textarea class="common-textarea form-control" name="message"
+									placeholder="Enter Messege" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
 							</div>
 							<div class="col-lg-12">
 								<div class="alert-msg" style="text-align: left;"></div>
 								<button class="primary-btn text-uppercase" style="float: right;">Send Message</button>
 							</div>
 						</div>
-					</form>
+					</form> -->
+					<div id="calendlyInline" style="height: 100%; padding: 0; min-height: 500px; margin-top: -75px"></div>
 				</div>
 			</div>
 		</div>
@@ -804,21 +814,24 @@
 	<!-- End contact-page Area -->
 
 	<!--================ Start Footer Area =================-->
-	<footer class="footer-area section-gap">
+	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-inner">
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f-widget">
+				<div class="col-lg-12 col-sm-12" style="text-align: center;">
+					<!-- <aside class="f-widget">
 						<div class="f-title">
 							<h3>About Me</h3>
 						</div>
 						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into
 							improving your skills,</p>
 
-					</aside>
+					</aside> -->
+					<div>
+						<img src="./img/pdblogo.png" alt="logo" />
+					</div>
 				</div>
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f-widget news-widget">
+				<!-- <div class="col-lg-5 col-sm-6">
+				<aside class="f-widget news-widget">
 						<div class="f-title">
 							<h3>Newsletter</h3>
 						</div>
@@ -835,8 +848,8 @@
 							</form>
 						</div>
 					</aside>
-				</div>
-				<div class="col-lg-2">
+				</div> -->
+				<!-- <div class="col-lg-2">
 					<aside class="f-widget social-widget">
 						<div class="f-title">
 							<h3>Follow Me</h3>
@@ -845,17 +858,30 @@
 						<ul class="list">
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 							<li><a href="#"><i class="fa fa-behance"></i></a></li>
 						</ul>
 					</aside>
+				</div> -->
+			</div>
+			<div class="row footer-inner footerIcons">
+				<div class="col-lg-12 col-sm-12">
+					<a href="https://m.facebook.com/PaulDaBarber-Fan-Page-133151003390393/"><i
+							class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/pauldabarber"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/pauldabarber/"><i class="fa fa-instagram"></i></a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12 ab-widget">
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					<p style="color:#000000; font-size:0.1px">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+							target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
 				</div>
 			</div>
 		</div>
@@ -863,8 +889,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!--================ End Footer Area =================-->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/owl-carousel-thumb.min.js"></script>
@@ -875,8 +902,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+	<script>
+		Calendly.initInlineWidget({
+			url: 'https://calendly.com/nguyenj0215',
+			parentElement: document.getElementById('calendlyInline'),
+			prefill: {},
+			utm: {}
+		});
+	</script>
 	<script src="js/main.js"></script>
 </body>
 

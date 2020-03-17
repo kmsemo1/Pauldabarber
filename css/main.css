@@ -1195,7 +1195,8 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s; }
-  .single-gallery-image:hover {
+
+.single-gallery-image:hover {
     opacity: .8; }
 
 .list-style {
@@ -2542,7 +2543,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Start Contact Area css
 ============================================================================================ */
 .contact-page-area {
-  background: #f9f9ff; }
+  background: #fbfcfd; }
   .contact-page-area .map-wrap {
     margin-bottom: 120px; }
     @media (max-width: 991px) {
@@ -3175,7 +3176,18 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer-area {
-  background: #000000; }
+  background: #000000;
+  padding-top: 35px;
+ }
+
+.footerIcons {
+  text-align: center;
+}
+.footerIcons a {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
 
 .f-title {
   margin-bottom: 35px; }
