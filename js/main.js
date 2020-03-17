@@ -9,8 +9,8 @@ $(document).ready(function () {
         fitscreen = window_height - header_height;
 
 
-    // $(".fullscreen").css("height", window_height)
-    // $(".fitscreen").css("height", fitscreen);
+    $(".fullscreen").css("height", window_height)
+    $(".fitscreen").css("height", fitscreen);
 
     //-------- Fixed Header Js ----------//
     // $(window).on("scroll", function () {
