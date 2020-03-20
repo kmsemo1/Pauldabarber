@@ -3278,3 +3278,11 @@ h1, h2, h3, h4, h5, h6 {
 ============================================================================================ */
 
 /*# sourceMappingURL=main.css.map */
+
+.scrollHighlighted {
+  color: #ba9236 !important;
+}
+.scrollUnhighlight {
+  color: #000;
+}
+
