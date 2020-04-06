@@ -235,36 +235,33 @@ $(document).ready(function () {
     color: #ba9236;
     background: #fff;
     */
-    $(document).on('scroll', function () {
+    $(window).on('scroll', function () {
         //about section
-        if ($(this).scrollTop() >= $('#topPage').position().top && 
-        $(this).scrollTop() < $('#aboutSection').position().top) {
+        if ($(window).scrollTop() >= $('#aboutSpace').offset().top) {
             $('#aboutNav').addClass('scrollHighlighted');
             $('#galleryNav').removeClass('scrollHighlighted');
-            $('#haircutsNav').removeClass('scrollHighlighted');
+            // $('#haircutsNav').removeClass('scrollHighlighted');
             $('#contactNav').removeClass('scrollHighlighted');
         } 
         //gallery section
-        else if ($(this).scrollTop() >= $('#aboutSection').position().top &&
-        $(this).scrollTop() <= $('#haircutsSection').position().top) {
+        else if ($(window).scrollTop() >= $('#gallerySection').offset().top) {
             $('#aboutNav').removeClass('scrollHighlighted');
             $('#galleryNav').addClass('scrollHighlighted');
-            $('#haircutsNav').removeClass('scrollHighlighted');
+            // $('#haircutsNav').removeClass('scrollHighlighted');
             $('#contactNav').removeClass('scrollHighlighted');
         } 
         //haircuts section
-        else if ($(this).scrollTop() >= ($('#gallerySection').position().top) &&
-        $(this).scrollTop() <= $('#contactSection').position().top) {
-            $('#aboutNav').removeClass('scrollHighlighted');
-            $('#galleryNav').removeClass('scrollHighlighted');
-            $('#haircutsNav').addClass('scrollHighlighted');
-            $('#contactNav').removeClass('scrollHighlighted'); 
-        } 
+        // else if ($(this).scrollTop() >= ($('#gallerySection').position().top)) {
+        //     $('#aboutNav').removeClass('scrollHighlighted');
+        //     $('#galleryNav').removeClass('scrollHighlighted');
+        //     $('#haircutsNav').addClass('scrollHighlighted');
+        //     $('#contactNav').removeClass('scrollHighlighted'); 
+        // } 
         //contact section
-        else if ($(this).scrollTop() >= $('#haircutsSection').position().top) {
+        else if ($(window).scrollTop() >= $('#contactSection').offset().top) {
             $('#aboutNav').removeClass('scrollHighlighted');
             $('#galleryNav').removeClass('scrollHighlighted');
-            $('#haircutsNav').removeClass('scrollHighlighted');
+            // $('#haircutsNav').removeClass('scrollHighlighted');
             $('#contactNav').addClass('scrollHighlighted');
         }
     })

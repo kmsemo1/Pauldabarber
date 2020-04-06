@@ -41,10 +41,9 @@
 			<div class="header-wrap">
 				<div class="header-top d-flex justify-content-between align-items-center navbar-expand-lg">
 					<div class="col menu-left">
-						<a id='homeNav' class="active" href="index.html">Home</a>
+						<a href="index.html">Home</a>
 						<a id='aboutNav' href="#aboutSection">about</a>
 						<!-- <a href="barbers.html">barbers</a> -->
-						<a id='galleryNav' href="#gallerySection">gallery</a>
 					</div>
 					<div class="col-3 logo">
 						<a href="index.html"><img class="mx-auto pdblogo" src="img/pdb-text-black.png" alt=""></a>
@@ -61,20 +60,21 @@
 						<div class="collapse navbar-collapse menu-right" id="collapsibleNavbar">
 							<ul class="navbar-nav justify-content-center w-100">
 								<li class="nav-item hide-lg">
-									<a class="nav-link" href="index.html">Home</a>
+									<a id='homeNav' class="nav-link" href="index.html">Home</a>
 								</li>
 								<li class="nav-item hide-lg">
 									<a class="nav-link js-scroll-trigger" href="#aboutSection">about</a>
 								</li>
-								<li class="nav-item">
+								<!-- <li class="nav-item">
 									<a id='haircutsNav' class="nav-link js-scroll-trigger"
 										href="#haircutsSection">Haircut Types</a>
-								</li>
+								</li> -->
 								<!--<li class="nav-item hide-lg">
 									<a class="nav-link" href="barbers.html">barbers</a>
 								</li> -->
-								<li class="nav-item hide-lg">
-									<a class="nav-link" href="#gallerySection">gallery</a>
+								<li class="nav-item">
+									<a id='galleryNav' class="nav-link js-scroll-trigger"
+										href="#gallerySection">gallery</a>
 								</li>
 								<!-- Dropdown -->
 								<!-- <li class="nav-item dropdown">
@@ -127,14 +127,14 @@
 
 		<div class="text-wrapper">
 			<h1>
-				For All Occasion <br>
+				For All Occasions <br>
 				HairStyle is a Must Try Fashion
 			</h1>
-			<p>
+			<!-- <p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or <br>
 				incididunt ut labore et dolore
 				magna aliqua. Ut enim ad minim.
-			</p>
+			</p> -->
 			<!-- <div class="text-center">
 				<a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=-V5_GMuMzc8">
 					<span></span>
@@ -146,7 +146,7 @@
 		</div>
 	</section>
 	<!--================ End banner Area =================-->
-
+	<div id="aboutSpace" style="margin-top: -150px; height: 125px;"></div>
 	<!--================ Start About Area =================-->
 	<section class="section-gap-top about-area" id="aboutSection">
 		<div class="container">
@@ -167,7 +167,8 @@
 				</div>
 				<div class="col-lg-7 col-md-6 text-center no-padding about-right">
 					<div class="about-thumb">
-						<img src="img/about-img.jpg" class="img-fluid info-img" alt="">
+						<img src="img/aboutPic.PNG" class="img-fluid info-img" alt=""
+							style="max-height: 400px; width: 325px">
 					</div>
 				</div>
 				<!-- <div class="bordered-img">
@@ -177,7 +178,7 @@
 		</div>
 	</section>
 	<!--================ End About Area =================-->
-
+	<div id="gallerySpace" style="margin-top: -150px; height: 125px;"></div>
 	<!--================ Start Gallery Area =================-->
 	<section class="gallery-area" id="gallerySection">
 		<div class="container">
@@ -194,9 +195,9 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid galleryImg" src="img/gallery/g1.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery1.JPG" alt="">
 							</div>
-							<a href="img/gallery/g1.jpg" class="img-pop-up">
+							<a href="img/gallery1.JPG" class="img-pop-up">
 								<div class="middle">
 									<div class="text align-self-center d-flex">
 										<img src="img/gallery/preview.png" alt="">
@@ -209,9 +210,9 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid galleryImg" src="img/gallery/g2.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery2.jpg" alt="">
 							</div>
-							<a href="img/gallery/g2.jpg" class="img-pop-up">
+							<a href="img/gallery2.jpg" class="img-pop-up">
 								<div class="middle">
 									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png"
 											alt=""></div>
@@ -223,9 +224,9 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid galleryImg" src="img/gallery/g3.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery3.jpg" alt="">
 							</div>
-							<a href="img/gallery/g3.jpg" class="img-pop-up">
+							<a href="img/gallery3.jpg" class="img-pop-up">
 								<div class="middle">
 									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png"
 											alt=""></div>
@@ -234,15 +235,16 @@
 
 						</div>
 					</div>
-					<!-- <div class="single-gallery col-lg-4 col-md-6 all">
+					<div class="single-gallery col-lg-4 col-md-6 all">
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="img/gallery/g4.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery4.jpg" alt="">
 							</div>
-							<a href="img/gallery/g4.jpg" class="img-pop-up">
+							<a href="img/gallery4.jpg" class="img-pop-up">
 								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png"
+											alt=""></div>
 								</div>
 							</a>
 						</div>
@@ -251,11 +253,12 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="img/gallery/g5.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery5.jpg" alt="">
 							</div>
-							<a href="img/gallery/g5.jpg" class="img-pop-up">
+							<a href="img/gallery5.jpg" class="img-pop-up">
 								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png"
+											alt=""></div>
 								</div>
 							</a>
 						</div>
@@ -264,15 +267,16 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="img/gallery/g6.jpg" alt="">
+								<img class="image img-fluid galleryImg" src="img/gallery6.jpg" alt="">
 							</div>
-							<a href="img/gallery/g6.jpg" class="img-pop-up">
+							<a href="img/gallery6.jpg" class="img-pop-up">
 								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png" alt=""></div>
+									<div class="text align-self-center d-flex"><img src="img/gallery/preview.png"
+											alt=""></div>
 								</div>
 							</a>
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</div>
@@ -280,7 +284,7 @@
 	<!--================Start Gallery Area =================-->
 
 	<!--================ Start Service Area =================-->
-	<section class="service-area section-gap" id="haircutsSection">
+	<!-- <section class="service-area section-gap" id="haircutsSection">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-8 text-center">
@@ -289,7 +293,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mb-5">
 				<div class="col-lg-3 col-sm-6 col-md-3">
 					<div class="single-service">
 						<img class="img-fluid" src="img/service/service1.jpg" alt="">
@@ -316,7 +320,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--================ End Service Area =================-->
 
 	<!--================ Start Catalogue Area =================-->
@@ -740,7 +744,7 @@
 		</div>
 	</div> -->
 	<!--================ End Events Area =================-->
-
+	<div id="contactSpace" style="margin-top: -150px; height: 125px;"></div>
 	<!-- Start contact-page Area -->
 	<section class="contact-page-area section-gap" id="contactSection">
 		<div class="container">
@@ -808,7 +812,7 @@
 							</div>
 						</div>
 					</form> -->
-					<div id="calendlyInline" style="height: 100%; padding: 0; min-height: 500px; margin-top: -70px">
+					<div id="calendlyInline" style="height: 100%; padding: 0; min-height: 500px;">
 					</div>
 				</div>
 			</div>
