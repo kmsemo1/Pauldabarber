@@ -235,21 +235,25 @@ $(document).ready(function () {
     color: #ba9236;
     background: #fff;
     */
-    $(window).on('scroll', function () {
+    $(document).on('scroll', function () {
         //about section
-        if ($(window).scrollTop() >= $('#aboutSpace').offset().top) {
+        if ($(this).scrollTop() >= $('#aboutSpace').offset().top 
+        && $(this).scrollTop() < $('#gallerySpace').offset().top) {
             $('#aboutNav').addClass('scrollHighlighted');
             $('#galleryNav').removeClass('scrollHighlighted');
             // $('#haircutsNav').removeClass('scrollHighlighted');
             $('#contactNav').removeClass('scrollHighlighted');
-        } 
+            $('#homeNav').removeClass('scrollHighlighted');
+        }
         //gallery section
-        else if ($(window).scrollTop() >= $('#gallerySection').offset().top) {
+        else if ($(this).scrollTop() >= $('#gallerySpace').offset().top
+        && $(this).scrollTop() < $('#contactSpace').offset().top) {
             $('#aboutNav').removeClass('scrollHighlighted');
             $('#galleryNav').addClass('scrollHighlighted');
             // $('#haircutsNav').removeClass('scrollHighlighted');
             $('#contactNav').removeClass('scrollHighlighted');
-        } 
+            $('#homeNav').removeClass('scrollHighlighted');
+        }
         //haircuts section
         // else if ($(this).scrollTop() >= ($('#gallerySection').position().top)) {
         //     $('#aboutNav').removeClass('scrollHighlighted');
@@ -258,11 +262,18 @@ $(document).ready(function () {
         //     $('#contactNav').removeClass('scrollHighlighted'); 
         // } 
         //contact section
-        else if ($(window).scrollTop() >= $('#contactSection').offset().top) {
+        else if ($(this).scrollTop() >= $('#contactSpace').offset().top) {
             $('#aboutNav').removeClass('scrollHighlighted');
             $('#galleryNav').removeClass('scrollHighlighted');
             // $('#haircutsNav').removeClass('scrollHighlighted');
             $('#contactNav').addClass('scrollHighlighted');
+            $('#homeNav').removeClass('scrollHighlighted');
+        }
+        else {
+            $('#aboutNav').removeClass('scrollHighlighted');
+            $('#galleryNav').removeClass('scrollHighlighted');
+            $('#contactNav').removeClass('scrollHighlighted');
+            $('#homeNav').addClass('scrollHighlighted');
         }
     })
 });
