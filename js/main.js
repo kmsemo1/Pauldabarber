@@ -153,14 +153,12 @@ $(document).ready(function () {
             }
         });
 
-
-
-    var unavailableDates = [
-        { start: '2015-08-31', end: '2015-09-05' },
-        { start: '2015-09-11', end: '2015-09-15' },
-        { start: '2015-09-15', end: '2015-09-23' },
-        { start: '2015-10-01', end: '2015-10-07' }
-    ];
+    // var unavailableDates = [
+    //     { start: '2015-08-31', end: '2015-09-05' },
+    //     { start: '2015-09-11', end: '2015-09-15' },
+    //     { start: '2015-09-15', end: '2015-09-23' },
+    //     { start: '2015-10-01', end: '2015-10-07' }
+    // ];
 
     // Google Map
     // if (document.getElementById("contactMap")) {
@@ -198,37 +196,37 @@ $(document).ready(function () {
     //     }
     // }
 
-    $('#mc_embed_signup').find('form').ajaxChimp();
-    // -------   Mail Send ajax
-    $(document).ready(function () {
-        var form = $('#myForm'); // contact form
-        var submit = $('.submit-btn'); // submit button
-        var alert = $('.alert-msg'); // alert div for show alert message
+    // $('#mc_embed_signup').find('form').ajaxChimp();
+    // // -------   Mail Send ajax
+    // $(document).ready(function () {
+    //     var form = $('#myForm'); // contact form
+    //     var submit = $('.submit-btn'); // submit button
+    //     var alert = $('.alert-msg'); // alert div for show alert message
 
-        // form submit event
-        form.on('submit', function (e) {
-            e.preventDefault(); // prevent default form submit
+    //     // form submit event
+    //     form.on('submit', function (e) {
+    //         e.preventDefault(); // prevent default form submit
 
-            $.ajax({
-                url: 'mail.php', // form action url
-                type: 'POST', // form submit method get/post
-                dataType: 'html', // request type html/json/xml
-                data: form.serialize(), // serialize form data
-                beforeSend: function () {
-                    alert.fadeOut();
-                    submit.html('Sending....'); // change submit button text
-                },
-                success: function (data) {
-                    alert.html(data).fadeIn(); // fade in response data
-                    form.trigger('reset'); // reset form
-                    submit.attr("style", "display: none !important");; // reset submit button text
-                },
-                error: function (e) {
-                    console.log(e)
-                }
-            });
-        });
-    });
+    //         $.ajax({
+    //             url: 'mail.php', // form action url
+    //             type: 'POST', // form submit method get/post
+    //             dataType: 'html', // request type html/json/xml
+    //             data: form.serialize(), // serialize form data
+    //             beforeSend: function () {
+    //                 alert.fadeOut();
+    //                 submit.html('Sending....'); // change submit button text
+    //             },
+    //             success: function (data) {
+    //                 alert.html(data).fadeIn(); // fade in response data
+    //                 form.trigger('reset'); // reset form
+    //                 submit.attr("style", "display: none !important");; // reset submit button text
+    //             },
+    //             error: function (e) {
+    //                 console.log(e)
+    //             }
+    //         });
+    //     });
+    // });
 
     //When user scrolls check which div they are in and highlight navbar accordingly
     /*
@@ -237,8 +235,8 @@ $(document).ready(function () {
     */
     $(document).on('scroll', function () {
         //about section
-        if ($(this).scrollTop() >= $('#aboutSpace').offset().top 
-        && $(this).scrollTop() < $('#gallerySpace').offset().top) {
+        if ($(this).scrollTop() >= $('#aboutSpace').offset().top
+            && $(this).scrollTop() < $('#gallerySpace').offset().top) {
             $('#aboutNav').addClass('scrollHighlighted');
             $('#galleryNav').removeClass('scrollHighlighted');
             // $('#haircutsNav').removeClass('scrollHighlighted');
@@ -247,7 +245,7 @@ $(document).ready(function () {
         }
         //gallery section
         else if ($(this).scrollTop() >= $('#gallerySpace').offset().top
-        && $(this).scrollTop() < $('#contactSpace').offset().top) {
+            && $(this).scrollTop() < $('#contactSpace').offset().top) {
             $('#aboutNav').removeClass('scrollHighlighted');
             $('#galleryNav').addClass('scrollHighlighted');
             // $('#haircutsNav').removeClass('scrollHighlighted');
@@ -269,6 +267,7 @@ $(document).ready(function () {
             $('#contactNav').addClass('scrollHighlighted');
             $('#homeNav').removeClass('scrollHighlighted');
         }
+        //Make home by default highlighted, it will be removed by scrolling anywhere else, 
         else {
             $('#aboutNav').removeClass('scrollHighlighted');
             $('#galleryNav').removeClass('scrollHighlighted');
