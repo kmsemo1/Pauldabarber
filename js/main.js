@@ -64,23 +64,23 @@ $(document).ready(function () {
     /*----------------------------------------------------*/
     /*  Testimonials Slider
     /*----------------------------------------------------*/
-    function testimonials_slider() {
-        if ($('.testi-slider').length) {
-            $('.testi-slider').owlCarousel({
-                loop: true,
-                margin: 30,
-                items: 1,
-                nav: false,
-                autoplay: 2500,
-                smartSpeed: 1500,
-                dots: false,
-                responsiveClass: true,
-                thumbs: true,
-                thumbsPrerendered: true
-            })
-        }
-    }
-    testimonials_slider();
+    // function testimonials_slider() {
+    //     if ($('.testi-slider').length) {
+    //         $('.testi-slider').owlCarousel({
+    //             loop: true,
+    //             margin: 30,
+    //             items: 1,
+    //             nav: false,
+    //             autoplay: 2500,
+    //             smartSpeed: 1500,
+    //             dots: false,
+    //             responsiveClass: true,
+    //             thumbs: true,
+    //             thumbsPrerendered: true
+    //         })
+    //     }
+    // }
+    // testimonials_slider();
 
     //------- Tabs Js --------//  
 
