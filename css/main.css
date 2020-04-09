@@ -3284,7 +3284,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /*# sourceMappingURL=main.css.map */
 
+/*
+Highlighting of navbar upon scrolling window
+*/
 .scrollHighlighted {
   color: #ba9236 !important;
+}
+
+/*
+Schedulicity Button
+*/
+.contactRight {
+  text-align: center;
+}
+.scheduleButton {
+
+}
+.scheduleButtonText {
+  letter-spacing: 2px;
+  color: black;
+  font-weight: bold;
 }
 
