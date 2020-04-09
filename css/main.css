@@ -3294,15 +3294,25 @@ Highlighting of navbar upon scrolling window
 /*
 Schedulicity Button
 */
+.contactLeft {
+  padding-left: 25px;
+  padding-right: 0;
+}
 .contactRight {
-  text-align: center;
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .scheduleButton {
-
+  margin-top: 20%;
+  padding: 10px;
+}
+.scheduleButtonText:hover {
+  color: #ba9236;
 }
 .scheduleButtonText {
   letter-spacing: 2px;
-  color: black;
   font-weight: bold;
+  color: white;
 }
 
